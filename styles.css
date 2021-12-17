@@ -1,0 +1,17 @@
+/* styling bs */
+html{
+    height: 100%;
+    background: linear-gradient(#ffffff 0%, #5b4394 100%);
+}
+
+h1{
+    color: #5b4394;
+    font-family: cursive;
+}
+
+p{
+font-family: cursive;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family');
