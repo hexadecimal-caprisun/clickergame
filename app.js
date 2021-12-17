@@ -17,7 +17,7 @@ counterBtn.addEventListener('click', function(){
 });
 
 upgradeBtn.addEventListener('click', function(){
-    if(counterUpdate >= 200){
+    if(counterUpdate >= 2000){
     window.location.replace("https://youtu.be/dQw4w9WgXcQ")
     }
 });
