@@ -45,6 +45,7 @@ function saveFunction(){
 function saveTextReset(){
     saveText.textContent = "Progress is saved on click"
 }
+
 /* Proper Upgrade Functionality
 upgradeBtn.addEventListener('click', function(){
     if(counterUpdate >= 200){
