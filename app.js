@@ -9,6 +9,7 @@ let counterUpdate = 0
 // let upgrade = false
 
 // events
+/* proper counter function w/ uprgade functionality
 counterBtn.addEventListener('click', function(){
     if(upgrade === false){
        counterUpdate++
@@ -17,6 +18,12 @@ counterBtn.addEventListener('click', function(){
         counterUpdate = counterUpdate + 3
         counter.textContent = "click counter = " + counterUpdate;
     }
+});
+*/
+
+counterBtn.addEventListener('click', function(){
+       counterUpdate++
+       counter.textContent = "click counter = " + counterUpdate;
 });
 
 upgradeBtn.addEventListener('click', function(){
