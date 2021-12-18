@@ -27,5 +27,19 @@ button.upgrade-btn {
   color: white;
 }
 
+button.load-btn {
+  height: 100px;
+  width: 50%;
+  background-color: slateblue;
+  color: white;
+}
+
+button.save-btn {
+  height: 100px;
+  width: 50%;
+  background-color: slateblue;
+  color: white;
+  float: left;
+}
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family");

@@ -1,11 +1,14 @@
 // variables
 const counter = document.querySelector(".click-counter");
 const counterBtn = document.querySelector(".funny-button");
-const upgradeBtn = document.querySelector(".upgrade-btn")
+const upgradeBtn = document.querySelector(".upgrade-btn");
+const loadBtn = document.querySelector(".load-btn");
+const saveBtn = document.querySelector(".save-btn");
+const saveText = document.querySelector(".saveText");
 let counterUpdate = 0
-let upgrade = false
+// let upgrade = false
 
-// event listeners
+// events
 counterBtn.addEventListener('click', function(){
     if(upgrade === false){
        counterUpdate++
@@ -22,6 +25,26 @@ upgradeBtn.addEventListener('click', function(){
     }
 });
 
+loadBtn.addEventListener('click', function(){
+    JSON.parse(window.localStorage.getItem('count'));
+    counterUpdate = JSON.parse(window.localStorage.getItem('count'));
+    counter.textContent = "click counter = " + counterUpdate;
+});
+
+saveBtn.addEventListener('click', function(){
+    saveFunction();
+    setTimeout(saveTextReset, 5000);
+});
+
+//functions
+function saveFunction(){
+    window.localStorage.setItem('count', JSON.stringify(counterUpdate));
+    saveText.textContent = "saved " + window.localStorage.getItem('count') + " clicks!";
+};
+
+function saveTextReset(){
+    saveText.textContent = "Progress is saved on click"
+}
 /* Proper Upgrade Functionality
 upgradeBtn.addEventListener('click', function(){
     if(counterUpdate >= 200){
